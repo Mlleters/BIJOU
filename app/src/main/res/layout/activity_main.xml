@@ -190,7 +190,6 @@
                     android:layout_marginTop="40dp"
                     android:layout_marginEnd="40dp"
                     app:hl_cornerRadius="22dp"
-                    app:hl_shadowBackColor="@color/colorPrimary"
                     app:hl_shadowColor="@color/colorTextPrimary"
                     app:hl_shadowLimit="5dp">
 

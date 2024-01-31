@@ -87,5 +87,3 @@ lint/tmp/
 /build
 /src/test
 /src/androidTest
-
-gradle.properties

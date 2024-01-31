@@ -12,19 +12,10 @@ android {
         versionName "2.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    signingConfigs {
-        config {
-            storeFile file(KEY_PATH)
-            storePassword KEY_PWD
-            keyAlias ALIAS_NAME
-            keyPassword ALIAS_PWD
-        }
-    }
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
         }
     }
     sourceSets {
@@ -33,6 +24,7 @@ android {
         }
     }
 }
+
 
 repositories {
     flatDir {
@@ -61,7 +53,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     implementation 'com.kyleduo.switchbutton:library:2.0.0'
     implementation 'com.github.clans:fab:1.6.4'
-    implementation 'com.github.lihangleo2:ShadowLayout:2.1.6'
+    implementation 'com.github.lihangleo2:ShadowLayout:3.4.0'
     implementation 'com.github.XuDaojie:QRCode-Android:v0.4.2'
     implementation 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1'
     implementation 'com.bm.photoview:library:1.4.1'
